@@ -1,0 +1,219 @@
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:53,443 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:53,443 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:53,443 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:53,454 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:53,454 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:53,455 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:53,456 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x106a6bb10>
+2025-01-19 15:45:53,456 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-01-19 15:45:53,456 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-01-19 15:45:53,456 - notes-server - INFO - Listing available tools
+2025-01-19 15:45:53,456 - notes-server - DEBUG - Returning tools: ['add-note']
+2025-01-19 15:45:53,456 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,456 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:53,594 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:53,595 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:53,595 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:53,595 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:53,606 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:53,606 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:53,608 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:53,608 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x107b97b10>
+2025-01-19 15:45:53,608 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:53,608 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:53,608 - notes-server - INFO - Calling tool 'add-note' with arguments: {'content': 'Hello, I am a readable note', 'name': 'readable-note'}
+2025-01-19 15:45:53,608 - notes-server - INFO - Added new note 'readable-note' with content length: 27
+2025-01-19 15:45:53,608 - notes-server - DEBUG - Sent resource list changed notification
+2025-01-19 15:45:53,609 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,609 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x107b97ed0>
+2025-01-19 15:45:53,609 - mcp.server.lowlevel.server - INFO - Processing request of type ReadResourceRequest
+2025-01-19 15:45:53,609 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ReadResourceRequest
+2025-01-19 15:45:53,609 - notes-server - INFO - Reading resource: note://internal/readable-note
+2025-01-19 15:45:53,609 - notes-server - DEBUG - Found note 'readable-note' with content length: 27
+2025-01-19 15:45:53,610 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,610 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:53,761 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:53,761 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:53,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:53,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:53,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:53,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:53,762 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:53,762 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:53,762 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:53,773 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:53,773 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:53,775 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:53,775 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x106e97b10>
+2025-01-19 15:45:53,775 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:53,775 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:53,775 - notes-server - INFO - Calling tool 'add-note' with arguments: {'content': 'Triggering list_changed', 'name': 'note-with-notification'}
+2025-01-19 15:45:53,775 - notes-server - INFO - Added new note 'note-with-notification' with content length: 23
+2025-01-19 15:45:53,775 - notes-server - DEBUG - Sent resource list changed notification
+2025-01-19 15:45:53,776 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,776 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x106e97ed0>
+2025-01-19 15:45:53,776 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2025-01-19 15:45:53,776 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListToolsRequest
+2025-01-19 15:45:53,776 - notes-server - INFO - Listing available tools
+2025-01-19 15:45:53,776 - notes-server - DEBUG - Returning tools: ['add-note']
+2025-01-19 15:45:53,776 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,777 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:53,929 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:53,929 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:53,929 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:53,941 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:53,941 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:53,942 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:53,943 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x123d53b10>
+2025-01-19 15:45:53,943 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:53,943 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:53,943 - notes-server - INFO - Calling tool 'add-note' with arguments: {'content': 123, 'name': 'numeric-content'}
+2025-01-19 15:45:53,943 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:53,943 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,066 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,066 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,066 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,078 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,079 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,080 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,081 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x10779bb10>
+2025-01-19 15:45:54,081 - mcp.server.lowlevel.server - INFO - Processing request of type SetLevelRequest
+2025-01-19 15:45:54,081 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,081 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,216 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,217 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,217 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,217 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,228 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,228 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,230 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,230 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x10a19bb10>
+2025-01-19 15:45:54,230 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:54,230 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:54,230 - notes-server - INFO - Calling tool 'add-note' with arguments: {'name': 'only-name-provided'}
+2025-01-19 15:45:54,230 - notes-server - ERROR - Missing name or content
+2025-01-19 15:45:54,230 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,231 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,343 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,344 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,344 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,355 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,355 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,357 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,357 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x1106a3b10>
+2025-01-19 15:45:54,357 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:54,357 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:54,357 - notes-server - INFO - Calling tool 'add-note' with arguments: {'content': 'Note content', 'name': 'listed-note'}
+2025-01-19 15:45:54,357 - notes-server - INFO - Added new note 'listed-note' with content length: 12
+2025-01-19 15:45:54,357 - notes-server - DEBUG - Sent resource list changed notification
+2025-01-19 15:45:54,358 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,358 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x1106a3ed0>
+2025-01-19 15:45:54,358 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2025-01-19 15:45:54,358 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type ListResourcesRequest
+2025-01-19 15:45:54,358 - notes-server - INFO - Listing resources - current notes count: 1
+2025-01-19 15:45:54,358 - notes-server - DEBUG - Returning resources: ['Note: listed-note']
+2025-01-19 15:45:54,359 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,359 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,496 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,497 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,497 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,497 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,508 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,508 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,510 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,510 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x10794fb10>
+2025-01-19 15:45:54,510 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:54,510 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:54,510 - notes-server - INFO - Calling tool 'add-note' with arguments: {'content': 'This is a test note', 'name': 'my-test-note'}
+2025-01-19 15:45:54,510 - notes-server - INFO - Added new note 'my-test-note' with content length: 19
+2025-01-19 15:45:54,511 - notes-server - DEBUG - Sent resource list changed notification
+2025-01-19 15:45:54,511 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,511 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,645 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,645 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,645 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,646 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,646 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,646 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,646 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,646 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,646 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,658 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,658 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,659 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,659 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,791 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,791 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,791 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,802 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,802 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,804 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,804 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x106c9bb10>
+2025-01-19 15:45:54,804 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2025-01-19 15:45:54,804 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type CallToolRequest
+2025-01-19 15:45:54,804 - notes-server - INFO - Calling tool 'this_tool_does_not_exist' with arguments: {}
+2025-01-19 15:45:54,804 - notes-server - ERROR - Unknown tool: this_tool_does_not_exist
+2025-01-19 15:45:54,804 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,805 - notes-server - INFO - Server shutting down
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Initializing server 'notes_simple'
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListResourcesRequest
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for ReadResourceRequest
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for PromptListRequest
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for GetPromptRequest
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for ListToolsRequest
+2025-01-19 15:45:54,928 - mcp.server.lowlevel.server - DEBUG - Registering handler for CallToolRequest
+2025-01-19 15:45:54,929 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-01-19 15:45:54,929 - notes-server - INFO - Starting notes server...
+2025-01-19 15:45:54,940 - notes-server - INFO - Server streams initialized
+2025-01-19 15:45:54,940 - notes-server - DEBUG - Initialization options: server_name='notes_simple' server_version='0.1.0' capabilities=ServerCapabilities(experimental={}, logging=None, prompts=PromptsCapability(listChanged=False), resources=ResourcesCapability(subscribe=False, listChanged=False), tools=ToolsCapability(listChanged=False))
+2025-01-19 15:45:54,941 - mcp.server.lowlevel.server - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0', type='notification')
+2025-01-19 15:45:54,941 - mcp.server.lowlevel.server - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x10659bb10>
+2025-01-19 15:45:54,941 - mcp.server.lowlevel.server - INFO - Processing request of type PingRequest
+2025-01-19 15:45:54,941 - mcp.server.lowlevel.server - DEBUG - Dispatching request of type PingRequest
+2025-01-19 15:45:54,941 - mcp.server.lowlevel.server - DEBUG - Response sent
+2025-01-19 15:45:54,942 - notes-server - INFO - Server shutting down

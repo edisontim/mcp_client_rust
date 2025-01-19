@@ -1,17 +1,14 @@
 use futures::StreamExt;
-use serde_json::Value;
 use std::sync::Arc;
 use tokio::sync::{Mutex, RwLock};
-use tokio::time::{timeout, Duration};
 
 use crate::{
     error::{Error, ErrorCode},
     protocol::{Notification, Request, RequestId},
     transport::{Message, Transport},
     types::{
-        CallToolRequest, CallToolResult, ClientCapabilities, CompleteRequest, CompleteResult,
-        GetPromptResult, Implementation, InitializeResult, ListPromptsResult, ListResourcesResult,
-        ListToolsResult, ServerCapabilities, Tool,
+        CallToolRequest, CallToolResult, ClientCapabilities, Implementation, InitializeResult,
+        ListResourcesResult, ListToolsResult, ServerCapabilities, Tool,
     },
     ReadResourceResult,
 };
@@ -28,6 +25,7 @@ pub struct Client {
     server_capabilities: Arc<RwLock<Option<ServerCapabilities>>>,
     request_counter: Arc<RwLock<i64>>,
     response_receiver: Arc<Mutex<tokio::sync::mpsc::UnboundedReceiver<Message>>>,
+    #[allow(unused)]
     response_sender: tokio::sync::mpsc::UnboundedSender<Message>,
 }
 
@@ -257,7 +255,7 @@ impl Client {
         tracing::debug!(?tool, "Found tool");
         Ok(tool)
     }
-    
+
     /// Read a resource by URI
     pub async fn read_resource(&self, uri: &str) -> Result<ReadResourceResult, Error> {
         tracing::debug!(%uri, "Reading resource");
@@ -267,7 +265,7 @@ impl Client {
         tracing::debug!(?result, "Received resource content");
         result
     }
-    
+
     /// List available resources
     pub async fn list_resources(&self) -> Result<ListResourcesResult, Error> {
         tracing::debug!("Listing available resources");
