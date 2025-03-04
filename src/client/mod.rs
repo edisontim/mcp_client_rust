@@ -1,8 +1,6 @@
 use futures::StreamExt;
-use serde_json::Value;
 use std::sync::Arc;
 use tokio::sync::{Mutex, RwLock};
-use tokio::time::{Duration, timeout};
 
 use crate::{
     ReadResourceResult,
@@ -10,9 +8,8 @@ use crate::{
     protocol::{Notification, Request, RequestId},
     transport::{Message, Transport},
     types::{
-        CallToolRequest, CallToolResult, ClientCapabilities, CompleteRequest, CompleteResult,
-        GetPromptResult, Implementation, InitializeResult, ListPromptsResult, ListResourcesResult,
-        ListToolsResult, ServerCapabilities, Tool,
+        CallToolRequest, CallToolResult, ClientCapabilities, Implementation, InitializeResult,
+        ListResourcesResult, ListToolsResult, ServerCapabilities, Tool,
     },
 };
 
@@ -35,6 +32,7 @@ pub struct Client {
     /// An MPSC receiver for reading incoming responses from the transport.
     response_receiver: Arc<Mutex<tokio::sync::mpsc::UnboundedReceiver<Message>>>,
     /// An MPSC sender for sending responses from the transport handler to this client.
+    #[allow(dead_code)]
     response_sender: tokio::sync::mpsc::UnboundedSender<Message>,
 }
 

@@ -5,7 +5,7 @@ use tokio::sync::RwLock;
 
 use crate::{
     error::{Error, ErrorCode},
-    protocol::{Notification, Request, RequestId, Response, ResponseError},
+    protocol::{Request, Response, ResponseError},
     transport::{Message, Transport},
     types::{ClientCapabilities, Implementation, ServerCapabilities},
 };
