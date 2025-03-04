@@ -62,6 +62,11 @@ where
                             Err(err) => Err(Error::Serialization(err.to_string())),
                         };
 
+                        if message.is_err() {
+                            tracing::warn!("error deserializing message: {}", trimmed);
+                            continue;
+                        }
+
                         let _ = sender_clone.send(message);
                     }
                     Err(err) => {
